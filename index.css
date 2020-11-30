@@ -1,5 +1,57 @@
 body {
-  font-family: "Roboto Mono", monospace;
   background-color: grey;
   color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+h3 {
+  font-weight: 300;
+  font-style: italic;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 18px;
+  color: #000000;
+  border: 3px dashed #ffffff;
+  border-radius: 18px;
+}
+fieldset {
+  background-color: #d8eeeb;
+  border: none;
+  border-radius: 9px;
+}
+legend {
+  padding: 18px;
+  background-color: #d8eeeb;
+  border: 3px solid grey;
+  border-radius: 9px;
+}
+input {
+  width: 100%;
+  padding: 9px 18px;
+  border: none;
+  border-bottom: 3px solid grey;
+  border-radius: 9px;
+  font-family: "Roboto Mono", monospace;
+}
+textarea {
+  border: none;
+  border-bottom: 3px solid grey;
+  border-radius: 9px;
+}
+input,
+label {
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+select,
+option,
+textarea,
+button {
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  margin: 10% 10%;
 }
