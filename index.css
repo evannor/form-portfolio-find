@@ -10,14 +10,24 @@
 .pd-2 {
   padding: 18px;
 }
+.box-padding {
+  padding: 9px 18px;
+}
+.space-margin {
+  margin: 18px 0;
+}
+.mrg-top-1 {
+  margin-top: 9px;
+}
+.mrg-bottom-lg {
+  margin-bottom: 90px;
+}
 .box-border {
   border: 3px solid var(--main-bg-color);
   border-radius: 9px;
 }
-.box-padding {
-  padding: 9px 18px;
-}
 
+/* Element Styles */
 body {
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
@@ -68,14 +78,18 @@ textarea,
 button {
   font-family: var(--main-font-family);
 }
+input[type="checkbox"] {
+  max-width: 15%;
+}
 
+/* Select Styles */
 .container {
-  margin: 10% 10%;
+  margin: 1% 10%;
 }
 .check-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
 }
 .check-box input,
@@ -83,12 +97,14 @@ button {
   margin-bottom: 0;
 }
 .check-box label {
-  width: 100%;
+  width: 50%;
 }
-
 .txt-msg {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
 }
+/* .select-menu {
+  padding: 18px 0;
+} */
