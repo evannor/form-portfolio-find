@@ -1,8 +1,28 @@
+/* Variables */
+:root {
+  --main-bg-color: grey;
+  --main-txt-color: white;
+  --main-font-family: "Roboto Mono", monospace;
+  --main-font-size: 18px;
+}
+
+/* Global Classes */
+.pd-2 {
+  padding: 18px;
+}
+.box-border {
+  border: 3px solid var(--main-bg-color);
+  border-radius: 9px;
+}
+.box-padding {
+  padding: 9px 18px;
+}
+
 body {
-  background-color: grey;
-  color: white;
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
 }
 h3 {
   font-weight: 300;
@@ -11,9 +31,8 @@ h3 {
 form {
   width: 50%;
   margin: 0 auto;
-  padding: 18px;
   color: #000000;
-  border: 3px dashed #ffffff;
+  border: 3px dashed var(--main-txt-color);
   border-radius: 18px;
 }
 fieldset {
@@ -23,33 +42,20 @@ fieldset {
   position: relative;
 }
 legend {
-  padding: 18px;
   background-color: #d8eeeb;
-  border: 3px solid grey;
-  border-radius: 9px;
 }
 input {
   width: 100%;
-  padding: 9px 18px;
   border: none;
-  border-bottom: 3px solid grey;
-  border-radius: 9px;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--main-font-family);
   outline: none;
-}
-textarea {
-  border: none;
-  border-bottom: 3px solid grey;
-  border-radius: 9px;
 }
 button {
   background-color: #d8eeeb;
   position: absolute;
-  bottom: -10%;
+  bottom: -12%;
   right: 0;
-  padding: 6px 18px;
-  border-radius: 9px;
-  border: white 2px solid;
+  font-weight: bold;
 }
 input,
 label {
@@ -60,7 +66,7 @@ select,
 option,
 textarea,
 button {
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--main-font-family);
 }
 
 .container {
