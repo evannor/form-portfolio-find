@@ -20,6 +20,7 @@ fieldset {
   background-color: #d8eeeb;
   border: none;
   border-radius: 9px;
+  position: relative;
 }
 legend {
   padding: 18px;
@@ -34,11 +35,21 @@ input {
   border-bottom: 3px solid grey;
   border-radius: 9px;
   font-family: "Roboto Mono", monospace;
+  outline: none;
 }
 textarea {
   border: none;
   border-bottom: 3px solid grey;
   border-radius: 9px;
+}
+button {
+  background-color: #d8eeeb;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+  padding: 6px 18px;
+  border-radius: 9px;
+  border: white 2px solid;
 }
 input,
 label {
@@ -54,4 +65,24 @@ button {
 
 .container {
   margin: 10% 10%;
+}
+.check-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.check-box input,
+.check-box label {
+  margin-bottom: 0;
+}
+.check-box label {
+  width: 100%;
+}
+
+.txt-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
 }

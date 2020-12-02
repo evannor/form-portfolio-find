@@ -30,10 +30,14 @@
           <option value="searchEngine">Search Engine</option>
           <option value="wordOfMouth">Word of Mouth</option>
         </select>
-        <input type="checkbox" name="newsletter" id="subscribeNews">
-        <label for="subscribeNews">Subscribe to Newsletter</label>
-        <label for="message">Write your question or message: </label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div class="check-box">
+          <label for="subscribeNews">Subscribe to Newsletter</label>
+          <input type="checkbox" name="newsletter" id="subscribeNews">
+        </div>
+        <div class="txt-msg">
+          <label for="message">Write your question or message: </label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
         <button type="submit">Send The Info</button>
       </fieldset>
     </form>
