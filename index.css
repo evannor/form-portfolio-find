@@ -242,6 +242,20 @@ li:hover {
   }
 }
 @media (max-width: 800px) {
+  body {
+    position: relative;
+  }
+  form {
+    width: 75%;
+  }
+  footer {
+    position: absolute;
+    bottom: -90px;
+  }
+  .container {
+    margin: 5% 0;
+    position: relative;
+  }
   .nav-menu {
     position: absolute;
     opacity: 0;
@@ -267,5 +281,28 @@ li:hover {
     width: 27px;
     background-color: black;
     margin: 8px auto;
+  }
+}
+
+@media (max-width: 450px) {
+  h3 {
+    padding: 0 5%;
+  }
+  form {
+    border: none;
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    font-size: medium;
+  }
+  ul {
+    padding-right: 9px;
+  }
+  .nav-box:first-child {
+    padding-left: 9px;
+  }
+  .btn-menu {
+    margin-right: 9px;
   }
 }
