@@ -173,7 +173,7 @@ li:hover {
 .check-box:hover input ~ .checkmark {
   background-color: var(--main-bg-color);
 }
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a different color background */
 .check-box input:checked ~ .checkmark {
   background-color: #464047;
 }
@@ -215,4 +215,57 @@ li:hover {
   align-self: center;
   flex-grow: 3;
   flex-basis: auto;
+}
+.btn-menu,
+.menu-dash {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1550px) {
+  select {
+    margin-top: 18px;
+  }
+  .container {
+    text-align: center;
+  }
+  .check-box {
+    justify-content: center;
+  }
+}
+@media (min-height: 970px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .nav-menu {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .btn-menu {
+    display: block;
+    width: 45px;
+    height: 47px;
+    border: solid 3px black;
+    border-radius: 9px;
+    margin-right: 27px;
+  }
+  .btn-menu:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 9px var(--main-bg-color);
+  }
+  .menu-dash {
+    display: block;
+    height: 3px;
+    width: 27px;
+    background-color: black;
+    margin: 8px auto;
+  }
 }
